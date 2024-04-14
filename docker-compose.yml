@@ -1,0 +1,8 @@
+version: '0.1.0'
+
+services:
+  house_grid:
+    image: house_grid
+    build:
+      context: ./
+      dockerfile: ./Dockerfile

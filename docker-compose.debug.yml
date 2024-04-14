@@ -1,0 +1,11 @@
+version: '0.1.0'
+
+services:
+  HA-C:
+    image: HA-c
+    build:
+      context: HA-C
+      dockerfile: ./Dockerfile
+    ports:
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "Run.js"]
