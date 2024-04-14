@@ -6,3 +6,9 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=
+      - MAIN_DATABASE_URL=
+      - HOME_ASSISTANT_HOST=
+      - HOME_ASSISTANT_TOKEN=
